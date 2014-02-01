@@ -1,20 +1,18 @@
-/* TEAM */
+/* AUTHOR */
                             
-Your title: Your name.                        
-Site: email, link to a contact form, etc.                         
-Twitter: your Twitter username.                        
-Location: City, Country.
+Name: The Vy Hong
+Email: shiweistg@gmail.com
+Site: https://github.com/tvhong
+Location: Sydney, Australia.
 
 
 /* THANKS */
 
 HTML5 Muffin
-Name: name or url
 
                             
 /* SITE */
                           
-Last update: YYYY/MM/DD                    
-Standards: HTML5, CSS3,..                   
-Components: Modernizr, jQuery, etc.                            
-Software: Software used for the development
+Last update: 2014/01/26                    
+Standards: HTML5, CSS3
+Software: Jekyll, Muffin
