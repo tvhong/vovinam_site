@@ -10,21 +10,23 @@
     <meta name="description" content="UNSW Vovinam martial art club">
 		<link rel="stylesheet" href="/css/style.css">	
 	    <!--[if lt IE 9]><script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
-		<link rel="shortcut icon" href="ico/favicon.ico">	    
+		<link rel="shortcut icon" href="/ico/favicon.ico">	    
 	</head>
 	<body>
   <div class="container">
 
-    <div class="navbar navbar-default" role="navigation">
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
       <div class="navbar-header">
-        <a class="navbar-brand" href="/">UNSW Vovinam</a>
+        <a href="/"><img src="/img/club_logo.png" alt="logo" id="logo"><div class="navbar-brand">UNSW Vovinam</div></a>
+        <!--a class="navbar-brand" href="/">UNSW Vovinam</a-->
       </div>
       <div class="navbar-collapse collapse">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="/" class="active">Home</a></li>
-          <li><a href="/about/">About</a></li>
-          <li><a href="/contact/">Contact</a></li>
-          <li><a href="/joinus/">Join Us</a></li>
+          <li {% if page.title == "Homepage" %}class="active"{% endif %}><a href="/">Home</a></li>
+          <li class="divider-vertical"></li>
+          <li {% if page.title == "About" %}class="active"{% endif %}><a href="/about/">About</a></li>
+          <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="/contact/">Contact</a></li>
+          <li {% if page.title == "Join Us" %}class="active"{% endif %}><a href="/joinus/">Join Us</a></li>
         </ul>
       </div>
     </div>

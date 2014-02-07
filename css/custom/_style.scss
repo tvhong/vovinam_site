@@ -2,3 +2,24 @@ body {
   background-color: $white;
 }
 
+#logo {
+}
+.navbar #logo{
+  float: left;
+  padding-left: $navbar-padding-horizontal;
+  height: $navbar-height;
+
+  @media (min-width: $grid-float-breakpoint) {
+    .navbar > .container & {
+      margin-left: -$navbar-padding-horizontal;
+    }
+  }
+}
+/*
+.navbar .divider-vertical {
+  border-left: 1px solid #F2F2F2;
+  border-right: 1px solid #FFFFFF;
+  height: $navbar-height;
+  margin: 0 9px;
+}
+*/
