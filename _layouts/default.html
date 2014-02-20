@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8"/>
-		<title>{% if page.title %} {{ page.title }} {% endif %} - UNSW Vovinam</title>
+		<title>{% if page.title %} {{ page.title }} {% endif %}</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- responsive site -->
 		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> <!-- chrome frame -->
 		<meta name="viewport" content="user-scalable=no"> <!-- prevents browser zoom on small devices -->
@@ -14,21 +14,17 @@
 	</head>
 	<body>
   <div class="container">
-
-    <div class="navbar navbar-default navbar-static-top" role="navigation">
-      <div class="navbar-header">
-        <a href="/"><img src="/img/club_logo.png" alt="logo" id="logo"><div class="navbar-brand">UNSW Vovinam</div></a>
-        <!--a class="navbar-brand" href="/">UNSW Vovinam</a-->
+    <div class="masthead" role="navigation">
+      <div class="masthead-head">
+        <a href="/"><img id="logo" src="/img/club_logo.png" alt="club_logo"></a>
+        <a href="/"><h3 id="brand" class="text-muted">UNSW Vovinam</h3></a>
       </div>
-      <div class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li {% if page.title == "Homepage" %}class="active"{% endif %}><a href="/">Home</a></li>
-          <li class="divider-vertical"></li>
-          <li {% if page.title == "About" %}class="active"{% endif %}><a href="/about/">About</a></li>
-          <li {% if page.title == "Contact" %}class="active"{% endif %}><a href="/contact/">Contact</a></li>
-          <li {% if page.title == "Join Us" %}class="active"{% endif %}><a href="/joinus/">Join Us</a></li>
-        </ul>
-      </div>
+      <ul class="nav nav-justified">
+        <li {% if page.url == "/index.html" %}class="active"{% endif %}><a href="/">Home</a></li>
+        <li {% if page.url == "/about/index.html" %}class="active"{% endif %}><a href="/about/">About</a></li>
+        <li {% if page.url == "/contact/index.html" %}class="active"{% endif %}><a href="/contact/">Contact</a></li>
+        <li {% if page.url == "/joinus/index.html" %}class="active"{% endif %}><a href="/joinus/">Join Us</a></li>
+      </ul>
     </div>
 
     <header role="banner">
