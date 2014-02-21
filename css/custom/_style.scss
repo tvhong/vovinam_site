@@ -33,6 +33,14 @@ body {
 .line-separator {
   border-bottom: 1px solid $grayAsh;
 }
+.index-promotion-pic {
+  width: 50%;
+}
+.footer {
+  .footer-caption {
+    font-weight: bold;
+  }
+}
 
 // Code copy from Bootstrap example http://getbootstrap.com/examples/justified-nav/
 body {
