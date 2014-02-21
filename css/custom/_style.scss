@@ -3,6 +3,9 @@ body {
 }
 
 .masthead .masthead-head {
+  padding-bottom: $line-height-computed / 2;
+}
+.masthead .masthead-head {
   #brand {
     display: inline-block;
   }
@@ -15,6 +18,21 @@ body {
 .navbar-nav > li {
   float: none;
 } 
+.about-section {
+  margin-bottom: 3em;
+  > h2 {
+    border-bottom: 1px solid $grayAsh;
+  }
+}
+
+.intro-separator {
+  width: 40%;
+  margin: 2em auto 1em auto;
+  border-bottom: 1px solid $grayAsh;
+}
+.line-separator {
+  border-bottom: 1px solid $grayAsh;
+}
 
 // Code copy from Bootstrap example http://getbootstrap.com/examples/justified-nav/
 body {
