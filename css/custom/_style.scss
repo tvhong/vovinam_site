@@ -33,8 +33,20 @@ body {
 .line-separator {
   border-bottom: 1px solid $grayAsh;
 }
-.index-promotion-pic {
+.joinus-promo-pic {
   width: 50%;
+}
+.about-promo-pic {
+  width: 40%;
+}
+.home-promo-pic {
+  width: 40%;
+}
+.home-mission-statement {
+  text-align: center;
+}
+.home-attractor {
+  text-align: center;
 }
 .footer {
   .footer-caption {
@@ -42,6 +54,20 @@ body {
   }
 }
 
+@media (max-width: $screen-tablet) {
+  .joinus-promo-pic {
+    width: 100%;
+  }
+  .about-promo-pic {
+    width: 100%;
+  }
+  .home-promo-pic {
+    width: 100%;
+  }
+  .home-mission-statement {
+    text-align: justify;
+  }
+}
 // Code copy from Bootstrap example http://getbootstrap.com/examples/justified-nav/
 body {
   padding-top: 20px;
