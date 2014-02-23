@@ -15,9 +15,14 @@ body {
     margin: -5px 5px 0px 0px;
   }
 }
+/*
 .navbar-nav > li {
   float: none;
-} 
+}
+*/
+div.center {
+  text-align: center;
+}
 .about-section {
   margin-bottom: 3em;
   > h2 {
@@ -48,6 +53,20 @@ body {
 .home-attractor {
   text-align: center;
 }
+.overview-box {
+  font-size: 1.2em;
+  h2 {
+    border-bottom: 1px solid $grayAsh;
+    margin-bottom: $font-size-large;
+  }
+  p {
+    margin-bottom: 1.2em;
+  }
+}
+.overview-promo-img {
+  margin-top: 60px;
+  width: 50%;
+}
 .footer {
   .footer-caption {
     font-weight: bold;
@@ -55,13 +74,7 @@ body {
 }
 
 @media (max-width: $screen-tablet) {
-  .joinus-promo-pic {
-    width: 100%;
-  }
-  .about-promo-pic {
-    width: 100%;
-  }
-  .home-promo-pic {
+  .promo-pic {
     width: 100%;
   }
   .home-mission-statement {
