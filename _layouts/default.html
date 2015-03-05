@@ -17,11 +17,11 @@
   <div class="container">
     <div class="masthead" role="navigation">
       <div class="masthead-head">
-	  <a href="/"><img id="logo" src="{{ site.baseurl }}{{ post.url }}/ico/logo.ico" alt="club_logo"></a>
+	  <a href="/"><img id="logo" src="{{ site.baseurl }}/ico/logo.ico" alt="club_logo"></a>
         <a href="/"><h3 id="brand" class="text-muted">UNSW Vovinam</h3></a>
       </div>
       <ul class="nav nav-justified">
-        <li {% if page.url == "{{ site.baseurl }}/index.html" %}class="active"{% endif %}><a href="/">Home</a></li>
+        <li {% if page.url == "{{ site.baseurl }}/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
         <li {% if page.url == "{{ site.baseurl }}/about/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/about/">About Us</a></li>
         <li {% if page.url == "{{ site.baseurl }}/overview/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/overview/">Training Overview</a></li>
         <li {% if page.url == "{{ site.baseurl }}/joinus/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/joinus/">Join Us</a></li>
