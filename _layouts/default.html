@@ -21,10 +21,14 @@
           <a href="{{ site.baseurl }}/"><h3 id="brand" class="text-muted">UNSW Vovinam</h3></a>
       </div>
       <ul class="nav nav-justified">
-        <li {% if page.url == "{{ site.baseurl }}/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
-        <li {% if page.url == "{{ site.baseurl }}/about/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/about/">About Us</a></li>
-        <li {% if page.url == "{{ site.baseurl }}/overview/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/overview/">Training Overview</a></li>
-        <li {% if page.url == "{{ site.baseurl }}/joinus/index.html" %}class="active"{% endif %}><a href="{{ site.baseurl }}/joinus/">Join Us</a></li>
+        {% capture home_url %}{{ site.baseurl }}/index.html{% endcapture %}
+        {% capture about_url %}{{ site.baseurl }}/about/index.html{% endcapture %}
+        {% capture overview_url %}{{ site.baseurl }}/overview/index.html{% endcapture %}
+        {% capture joinus_url %}{{ site.baseurl }}/joinus/index.html{% endcapture %}
+        <li {% if page.url == home_url %}class="active"{% endif %}><a href="{{ site.baseurl }}/">Home</a></li>
+        <li {% if page.url == about_url %}class="active"{% endif %}><a href="{{ site.baseurl }}/about/">About Us</a></li>
+        <li {% if page.url == overview_url %}class="active"{% endif %}><a href="{{ site.baseurl }}/overview/">Training Overview</a></li>
+        <li {% if page.url == joinus_url %}class="active"{% endif %}><a href="{{ site.baseurl }}/joinus/">Join Us</a></li>
       </ul>
     </div> <!--masthead-->
 
