@@ -1,26 +1,24 @@
-UNSW Vovinam Site
-=================
-This is the source code for UNSW Vovinam site. It is hosted as a Github project page. It uses Jekyll and [Muffin](http://richbray.me/muffin/) template. 
+# UNSW Vovinam Site (http://unswvovinam.org)
 
-First, you'll need to install Ruby, Rubygems(included in Ruby). Then install
-bundler gem to help manage the dependencies of your gem in this repo. Then use
-bundler to install other gems required for this repo. All of that are written
-here:
-[Github](https://help.github.com/articles/using-jekyll-with-pages/#installing-jekyll).
+## Intro
+This repo contains the source code used for a simple static website http://unswvovinam.org. This site is my gift to my martial arts club at my university.
 
-Note that I already populated the Gemfile in the repo so you don't need to do
-that.
+The webpage is hosted as a [Github page](https://pages.github.com/) and hence
+it uses [Jekyll](https://jekyllrb.com/). I also use [Muffin](http://richbray.me/muffin/) to simplify the design of the page. I would like to thank the Jekyll community and @richardbray for their work. 
 
-To run your server, follow these steps:
+## Installation
 
-1.Go to your repo, run `sh watch.sh`. This shell script checks and compiles `*.scss` files to `*.css` if needed.
+### Setup
+1. Clone this project: `git clone https://github.com/tvhong/vovinam_site.git`
+2. Follow instructions on this [Github help page](https://help.github.com/articles/using-jekyll-as-a-static-site-generator-with-github-pages/) to install Ruby and the Rubygems required for the project. Note all the required RubyGems for Jekyll and Muffin are already set in the project's `Gemfile`.
 
-2. Then, bring up Jekyll server by `bundle exec jekyll serve --baseurl ""`.
-   The baseurl setting is there because my site is a Github project page as
-   oppose to a personal Github page.
-   See http://jekyllrb.com/docs/github-pages/ for more details.
+### Running local server
 
-3. Visit http://localhost:4000/ in your browser and you'll see your page there.
-   If that doesn't work, use the link in your "Server address" output from the previous command instead.
+1. Go to your repo, run `sh watch.sh`. This shell script will check and compile `*.scss` files to `*.css` if needed.
+2. Bring up Jekyll server by `bundle exec jekyll serve --baseurl ""`. The baseurl option there is to override baseurl option in _config.yml in case you have any.
+3. Visit http://localhost:4000/ in your browser and your page is there.If that doesn't work, check your terminal output for the `Server address` link.
 
-You may need to change baseurl setting in \_config.yml to match your page structure. See http://jekyllrb.com/docs/github-pages/
+## Make it your own
+Although I don't see why you may want to fork from this project but in case you do, you could check out the "Getting Started" section on [Jekyll's documentation](https://jekyllrb.com/docs/) (note you have already finished the installation part). Also check out SCSS and Muffin documentation to see what they have to offer.
+
+Tip: You might want to start by changing the settings in `_config.yml`
